@@ -18,22 +18,21 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "527b15afc6dce5e4",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "a1ab3fade2caaf64",
+            "id": "5506671dd9eec594",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Python学习/测试.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python学习/知识点.md",
+                "file": "Python学习/测试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python学习/知识点.md",
+                "file": "Python学习/测试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,16 +138,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python学习/知识点.md"
+                "file": "Python学习/测试.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,11 +159,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6fc102120e65351b",
+  "active": "c0990cd238639662",
   "lastOpenFiles": [
+    "Python学习/知识点.md",
+    "Python学习/测试.md",
     "Python学习/例题.md",
     "欢迎.md",
-    "Python学习/知识点.md",
     "Python学习"
   ]
 }
