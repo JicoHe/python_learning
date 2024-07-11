@@ -7,4 +7,3 @@ prompt += "\nWhat's your name?"
 
 name = input(prompt)
 print('Hello,', name + '!')
-
