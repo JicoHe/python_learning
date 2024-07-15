@@ -22,12 +22,30 @@ class Car:
     def increment_odometer(self, miles):
         self.odometer_reading += miles
 
+    def fill_gas_tank(self):
+        print(f"This car need to fill some gas ")
 
-my_new_car = Car('audi', 'a4', 2020)
-print(my_new_car.get_descriptive_name())
+class Battery:
+    def __init__(self, battery_size=75):
+        self.battery_size = battery_size
 
-my_new_car.update_odometer(23_500)
-my_new_car.read_odometer()
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kWh battery")
 
-my_new_car.increment_odometer(100)
-my_new_car.read_odometer()
+    def get_range(self, range=260):
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+        print(f"This car can go about {range} miles on a full charge")
+
+    def upgrade_battery(self):
+        if self.battery_size < 100:
+            self.battery_size = 100
+
+class ElectricCar(Car):
+    """初始化父母类的属性"""
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        # 创建了Battery的实例
+        self.battery = Battery()

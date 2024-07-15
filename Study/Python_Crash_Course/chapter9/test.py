@@ -48,6 +48,8 @@ class User:
 
     def reset_login_attempts(self):
         self.login_attempts = 0
+
+
 # 9-4
 restaurant = Restaurant('塔斯汀', '中国汉堡')
 restaurant.describe_restaurant()
@@ -59,10 +61,45 @@ restaurant.increment_number_served(1)
 restaurant.describe_restaurant()
 
 # 9-5
-user = User('Jico', 'He', 'male' , 0)
+user = User('Jico', 'He', 'male', 0)
 user.increment_login_attempts()
 user.increment_login_attempts()
 user.increment_login_attempts()
 user.describe_user()
 user.reset_login_attempts()
 user.describe_user()
+
+
+# 9-6 冰淇淋小铺
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ['Strawberry', 'Watermelon', 'Milk']
+
+    def describe_flavor(self):
+        print("We have these flavors:")
+        for flavor in self.flavors:
+            print(f"- {flavor}")
+
+
+IceCreamStand = IceCreamStand('Mcdonald', 'Sweet')
+IceCreamStand.describe_flavor()
+
+# 9-7 9-8 用户中的管理员
+class Privileges:
+    def __init__(self, privileges=['can add post', 'can delete post', 'can ban user']):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print(f"You have these privileges:\n{self.privileges}")
+
+class Admin(User):
+    def __init__(self, first_name, last_name, gender, login_attempts):
+        super().__init__(first_name, last_name, gender, login_attempts)
+        self.privileges = Privileges()
+
+
+Admin = Admin('Jico', 'He', 'male', '0')
+Admin.privileges.show_privileges()
+
+# 9-9 见源文件
