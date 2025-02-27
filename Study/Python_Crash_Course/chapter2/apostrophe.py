@@ -10,4 +10,4 @@ print(f"{name.upper()}\n{name.lower()}\n{name.title()}")
 print('Albert Einstein once said, "A person who never made a mistake never\ntried anything new"')
 famous_name = "Albert Einstein"
 message2 = f'{famous_name} once said, "A person who never made a mistake never tried anything new"'
-print(f"\n{message2}")
+print(f"{message2}")

@@ -32,5 +32,5 @@ print(f"{guest.pop()}, i'm gonna let you go!") # 将最后一个值拿出列表�
 print(f"{guest[0]}, you stay!")
 print(f"{guest[1]}, you stay!")
 del guest[0]
-del guest[1]
+
 print(guest)
